@@ -1,0 +1,204 @@
+/* 全局 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* 顶部导航栏 */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 182, 193, 0.8);
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 菜单按钮 */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+/* 视频背景 */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 自适应视频样式 */
+.responsive-video {
+    width: 100%;          /* 占满容器宽度 */
+    max-width: 1600px;     /* 限制最大宽度，避免太大 */
+    height: auto;         /* 高度自动，保持比例 */
+    display: block;       /* 居中 */
+    margin: 0 auto;       /* 水平居中 */
+    border-radius: 12px;  /* 圆角，可选 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* 阴影，可选 */
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    margin: 0 0 10px;
+}
+
+.overlay p {
+    font-size: 20px;
+}
+
+/* 内容区 */
+.section {
+    padding: 60px 20px;
+    max-width: 1600px;
+    display: block;       /* 居中 */
+    margin: 0 auto;       /* 水平居中 */
+    border-radius: 12px;  /* 圆角，可选 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* 阴影，可选 */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 活动照片 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* 让所有 img 自动裁成 16:9，保持居中 */
+img{
+  aspect-ratio:16/9;   /* 关键：设定比例 */
+  object-fit:cover;    /* 填满，多余部分裁掉 */
+  width:100%;          /* 自适应父容器宽度 */
+  height:auto;         /* 让高度按 16:9 自动计算 */
+  display:block;       /* 去掉底部空隙 */
+}
+/* 文章分享 */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.article {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* 联系我们优化 */
+.contact-section {
+    background: #ffe4ec;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.contact-form {
+    display: grid;
+    gap: 12px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.contact-form button {
+    background: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    background: #ffb6c1;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #ffb6c1;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}

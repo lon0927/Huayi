@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花忆动漫社</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header>
+        <div class="logo">花忆动漫社</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href=" ">关于我们</a ></li>
+                <li><a href="#events">活动照片</a ></li>
+                <li><a href="#articles">文章分享</a ></li>
+                <li><a href="#contact">联系我们</a ></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+
+ <!-- 视频背景 -->
+<section class="hero">
+    <h2>活动视频</h2>
+    <video autoplay muted loop playsinline class="responsive-video">
+        <source src="videos/banner1.mp4" type="video/mp4">
+        <source src="videos/banner1.webm" type="video/webm">
+        <source src="videos/banner1.ogg" type="video/ogg">
+    </video>
+    <div class="overlay">
+        <h1>欢迎来到花忆动漫社</h1>
+        <p>分享动漫、花艺与创意，享受美好生活</p >
+    </div>
+</section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="section">
+        <h2>关于我们</h2>
+
+<!-- 1. 社团简介配图 -->
+<img src="images/event1.jpg" alt="花忆动漫社活动照">
+
+<!-- 2. 逐条介绍 -->
+<ol>
+  <li>
+    <strong>成立初衷</strong><br>
+    花忆动漫社诞生于 20xx，由一群热爱花艺与二次元文化的小伙伴共同发起，希望把“动漫”，创造独一无二的视觉与情感体验。
+  </li>
+
+  <li>
+    <strong>日常活动</strong><br>
+    Cos 拍摄  
+    每周线上分享会：新番推荐，摄影技巧；  
+    不定期联动漫展出展。
+  </li>
+
+  <li>
+    <strong>核心成员</strong><br>
+    现有正式社员 110人，分别来自设计、艺术、摄影、配音等多领域，分工明确，气氛融洽。
+  </li>
+
+  <li>
+    <strong>未来计划</strong><br>
+    ① ；<br>
+    ② ；<br>
+    ③ 
+  </li>
+</ol>
+
+    <!-- 活动照片 -->
+    <section id="events" class="section">
+        <h2>活动照片</h2>
+        <div class="gallery">
+            <img src="images/event1.jpg" alt="活动1">
+            <img src="images/event2.jpg" alt="活动2">
+            <img src="images/event3.jpg" alt="活动3">
+            <img src="images/event4.jpg" alt="活动4">
+        </div>
+    </section>
+
+    <!-- 文章分享 -->
+    <section id="articles" class="section">
+        <h2>文章分享</h2>
+        <div class="articles">
+            <div class="article">
+                <h3>与动漫的结合</h3>
+                <p></p >
+            </div>
+            <div class="article">
+                <h3>活动回顾</h3>
+                <p>上周我们举办了“动漫的奇妙之旅”活动，吸引了众多动漫爱好者参与，场面热烈。</p >
+            </div>
+            <div class="article">
+                <h3>创意分享</h3>
+                <p>如何现实与二次元结合？我们将在后续活动中持续探索更多可能性。</p >
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="section contact-section">
+        <h2>联系我们</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="您的姓名" required>
+            <input type="email" placeholder="您的邮箱" required>
+            <textarea placeholder="留言内容" required></textarea>
+            <button type="submit">提交</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 花忆动漫社 | 制作者：泠然</p >
+    </footer>
+
+    <script src="script.js"></script>
+</body>
