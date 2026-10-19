@@ -1,117 +1,225 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>花忆动漫社</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花忆动漫社 · 山西电子科技学院</title>
+<meta name="description" content="山西电子科技学院花忆动漫社：漫展、桌游、新老生见面会、赏春寻宝……一学期五场活动，把二次元搬进校园。">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 顶部导航栏 -->
-    <header>
-        <div class="logo">花忆动漫社</div>
-        <nav>
-            <ul id="nav-menu">
-                <li><a href=" ">关于我们</a ></li>
-                <li><a href="#events">活动照片</a ></li>
-                <li><a href="#articles">文章分享</a ></li>
-                <li><a href="#contact">联系我们</a ></li>
-            </ul>
-        </nav>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    </header>
+<a class="skip-link" href="#main">跳到主要内容</a>
 
- <!-- 视频背景 -->
-<section class="hero">
-    <h2>活动视频</h2>
-    <video autoplay muted loop playsinline class="responsive-video">
-        <source src="videos/banner1.mp4" type="video/mp4">
-        <source src="videos/banner1.webm" type="video/webm">
-        <source src="videos/banner1.ogg" type="video/ogg">
-    </video>
-    <div class="overlay">
-        <h1>欢迎来到花忆动漫社</h1>
-        <p>分享动漫、花艺与创意，享受美好生活</p >
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-dot" aria-hidden="true"></span>
+      花忆动漫社
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="主导航">
+      <ul id="nav-menu">
+        <li><a href="index.html" class="is-active">首页</a></li>
+        <li><a href="activities.html">活动档案</a></li>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#gallery">影集</a></li>
+        <li><a href="#contact" class="nav-cta">加入我们</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" type="button"
+            aria-controls="site-nav" aria-expanded="false" aria-label="打开菜单">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= 首屏 ================= -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="images/booth-04.png" alt="花忆动漫社在校园摆摊，展台上摆着立牌、周边与抽奖箱">
     </div>
-</section>
+    <div class="hero-inner">
+      <span class="hero-kicker">Hua Yi Anime Club</span>
+      <h1>花忆动漫社</h1>
+      <p>山西电子科技学院的二次元据点。我们办漫展、开桌游、拍 Cos、在春天里藏礼物——
+         把喜欢的东西做成一场又一场能一起玩的活动。</p>
+      <div class="hero-actions">
+        <a class="btn" href="activities.html">看看我们的活动档案</a>
+        <a class="btn ghost" href="#contact">加入我们</a>
+      </div>
+    </div>
+    <span class="hero-scroll" aria-hidden="true">SCROLL</span>
+  </section>
 
-    <!-- 关于我们 -->
-    <section id="about" class="section">
+  <!-- ================= 数字 ================= -->
+  <section class="section" id="numbers">
+    <div class="container">
+      <div class="stats">
+        <div class="stat"><strong>110+</strong><span>名正式社员</span></div>
+        <div class="stat"><strong>5</strong><span>场已归档活动</span></div>
+        <div class="stat"><strong>4</strong><span>个部门：宣传 / 摄影 / Cos / 美术</span></div>
+        <div class="stat"><strong>100%</strong><span>可回收物资回收率</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 关于我们 ================= -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <figure class="about-figure">
+        <img src="images/booth-01.png" alt="招新摊位前，社员正在给同学介绍周边">
+        <figcaption>校园招新现场 · 摊位与周边</figcaption>
+      </figure>
+
+      <div class="about-text">
         <h2>关于我们</h2>
+        <p>花忆动漫社是一个以动漫、Cos、摄影与桌游为载体的学生社团。社员来自设计、艺术、摄影、配音等不同方向，
+           分工明确，日常气氛融洽。</p>
+        <p>我们做活动的思路很简单：<strong>先让参与者觉得好玩，再让这件事能留下东西。</strong>
+           所以每场活动都会留返图、留总结、留复盘——一年下来，社团攒下的不只是照片，
+           还有一套能重复用的流程。</p>
+        <ul class="about-list">
+          <li><b>日常</b>：每周线上分享会——新番推荐、摄影技巧、出片踩点。</li>
+          <li><b>大型</b>：每学期一场校园漫展或主题展，联合其他社团一起办。</li>
+          <li><b>轻社交</b>：新老生见面会、桌游派对、春日寻宝，门槛低、参与感强。</li>
+          <li><b>出片</b>：Cos 主题拍摄，从选景、配色到后期，由摄影部带着做。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<!-- 1. 社团简介配图 -->
-<img src="images/event1.jpg" alt="花忆动漫社活动照">
+  <!-- ================= 活动掠影 ================= -->
+  <section class="section alt" id="events">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Events</span>
+        <h2>最近在做什么</h2>
+        <p>挑三场先看看，完整的活动档案在第二页。</p>
+      </div>
 
-<!-- 2. 逐条介绍 -->
-<ol>
-  <li>
-    <strong>成立初衷</strong><br>
-    花忆动漫社诞生于 20xx，由一群热爱花艺与二次元文化的小伙伴共同发起，希望把“动漫”，创造独一无二的视觉与情感体验。
-  </li>
+      <div class="cards">
+        <article class="card">
+          <img src="images/booth-03.png" alt="漫展现场摊位">
+          <div class="card-body">
+            <div class="card-meta"><span>2025.04.26</span><span>操场</span></div>
+            <h3>次元跃动·青春集结</h3>
+            <p>联合心理健康研究教育者协会与电子竞技协会办的校园漫展：Coser 展示、摄影创作、
+               社团联动游戏，一整天把操场变成了展场。</p>
+            <a class="card-link" href="activities.html#manzhan">看这场活动的记录 →</a>
+          </div>
+        </article>
 
-  <li>
-    <strong>日常活动</strong><br>
-    Cos 拍摄  
-    每周线上分享会：新番推荐，摄影技巧；  
-    不定期联动漫展出展。
-  </li>
+        <article class="card">
+          <img src="images/meet-01.jpg" alt="新老生见面会现场">
+          <div class="card-body">
+            <div class="card-meta"><span>2025.12.06</span><span>公共教学南楼 311</span></div>
+            <h3>新老生见面会</h3>
+            <p>谷子接龙、你画我猜、粉笔墙、桌游区。人均认识 2.4 名同好，
+               顺带挖出 3 个绘画骨干和 2 个摄影苗子。</p>
+            <a class="card-link" href="activities.html#meet">看这场活动的记录 →</a>
+          </div>
+        </article>
 
-  <li>
-    <strong>核心成员</strong><br>
-    现有正式社员 110人，分别来自设计、艺术、摄影、配音等多领域，分工明确，气氛融洽。
-  </li>
+        <article class="card">
+          <img src="images/booth-07.jpg" alt="春日校园寻宝活动">
+          <div class="card-body">
+            <div class="card-meta"><span>2026.03.17</span><span>校园春景区域</span></div>
+            <h3>校园寻春·共赏新景</h3>
+            <p>把礼品藏进草坪、花坛和教学楼周边，让师生走出教室去找。
+               一天收上来百余张春日打卡返图。</p>
+            <a class="card-link" href="activities.html#shangchun">看这场活动的记录 →</a>
+          </div>
+        </article>
+      </div>
 
-  <li>
-    <strong>未来计划</strong><br>
-    ① ；<br>
-    ② ；<br>
-    ③ 
-  </li>
-</ol>
+      <div class="center-more">
+        <a class="btn" href="activities.html">进入活动档案（5 场）</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- 活动照片 -->
-    <section id="events" class="section">
-        <h2>活动照片</h2>
-        <div class="gallery">
-            <img src="images/event1.jpg" alt="活动1">
-            <img src="images/event2.jpg" alt="活动2">
-            <img src="images/event3.jpg" alt="活动3">
-            <img src="images/event4.jpg" alt="活动4">
+  <!-- ================= 影集 ================= -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Gallery</span>
+        <h2>影集</h2>
+        <p>摊位、立牌、桌游、教室里的黑板报，都是社团的日常切面。</p>
+      </div>
+
+      <div class="gallery">
+        <figure><img src="images/booth-02.png" alt="摊位前的同学"><figcaption>招新 · 摊位前</figcaption></figure>
+        <figure><img src="images/booth-05.png" alt="展台上的周边"><figcaption>周边与抽奖箱</figcaption></figure>
+        <figure><img src="images/booth-06.png" alt="活动现场"><figcaption>活动现场</figcaption></figure>
+        <figure><img src="images/booth-08.jpg" alt="合照"><figcaption>收摊前的大合照</figcaption></figure>
+        <figure><img src="images/meet-02.jpg" alt="教室里的见面会"><figcaption>新老生见面会 · 教室</figcaption></figure>
+        <figure><img src="images/meet-03.jpg" alt="黑板报"><figcaption>「新老生见面会」黑板报</figcaption></figure>
+        <figure><img src="images/event1.jpg" alt="社团合影"><figcaption>社团合影</figcaption></figure>
+        <figure><img src="images/event4.jpg" alt="活动照片"><figcaption>活动留影</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 联系 ================= -->
+  <section class="section alt" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Join us</span>
+        <h2>加入我们</h2>
+        <p>想入社、想合作、想来看活动，都欢迎留言。</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>社团信息</h3>
+          <ul class="contact-list">
+            <li><b>所属院校</b>山西电子科技学院</li>
+            <li><b>日常活动地</b>公共教学南楼（大教室 / 小教室）</li>
+            <li><b>大型活动地</b>操场 · 阶梯教室</li>
+            <li><b>部门</b>宣传部、摄影部、Cos 部、美术部</li>
+            <li><b>加入方式</b>社团群报名 + 现场报名，均可</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- 文章分享 -->
-    <section id="articles" class="section">
-        <h2>文章分享</h2>
-        <div class="articles">
-            <div class="article">
-                <h3>与动漫的结合</h3>
-                <p></p >
-            </div>
-            <div class="article">
-                <h3>活动回顾</h3>
-                <p>上周我们举办了“动漫的奇妙之旅”活动，吸引了众多动漫爱好者参与，场面热烈。</p >
-            </div>
-            <div class="article">
-                <h3>创意分享</h3>
-                <p>如何现实与二次元结合？我们将在后续活动中持续探索更多可能性。</p >
-            </div>
-        </div>
-    </section>
-
-    <!-- 联系我们 -->
-    <section id="contact" class="section contact-section">
-        <h2>联系我们</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="您的姓名" required>
-            <input type="email" placeholder="您的邮箱" required>
-            <textarea placeholder="留言内容" required></textarea>
-            <button type="submit">提交</button>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">你的称呼</label>
+            <input id="name" name="name" type="text" placeholder="怎么称呼你" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">联系方式</label>
+            <input id="email" name="email" type="text" placeholder="邮箱或微信号" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="message">想说的话</label>
+            <textarea id="message" name="message" placeholder="比如：我想加入，平时比较会拍照片"></textarea>
+          </div>
+          <button class="btn" type="submit">提交</button>
+          <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
         </form>
-    </section>
-    <footer>
-        <p>© 2025 花忆动漫社 | 制作者：泠然</p >
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="foot-brand">花忆动漫社</div>
+      <div>山西电子科技学院 · 动漫 × 花艺 × 创意</div>
+    </div>
+    <div>
+      <a href="activities.html">活动档案</a> ·
+      <a href="#about">关于我们</a> ·
+      <a href="#contact">加入我们</a>
+    </div>
+    <div>© 2026 花忆动漫社 · 页面制作：泠然</div>
+  </div>
+</footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="回到顶部">↑</button>
+<script src="script.js"></script>
 </body>
+</html>
