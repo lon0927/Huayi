@@ -913,3 +913,27 @@ body { overscroll-behavior-y: contain; }
   background: var(--pink-50);
   border-radius: var(--radius-sm);
 }
+
+/* ---------- 活动档案：场内更多照片 ---------- */
+.thumb-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 14px 0 4px;
+}
+.thumb-row a {
+  display: block;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--pink-50);
+}
+.thumb-row img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform .5s var(--ease);
+}
+.thumb-row a:hover img,
+.thumb-row a:focus-visible img { transform: scale(1.04); }
+@media (max-width: 560px) {
+  .thumb-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+}
