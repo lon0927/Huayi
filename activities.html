@@ -4,7 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>活动档案 · 花忆动漫社</title>
-<meta name="description" content="花忆动漫社 2025—2026 学年活动档案：校园漫展、桌游嘉年华、新老生见面会、赏春寻宝，每场活动的成果、问题与改进都记在这里。">
+<meta name="description" content="花忆动漫社五场活动的完整档案：时间、地点、规模、现场怎么运转、我们学到什么。每场一份记录，同一页内切换查看。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="活动档案 · 花忆动漫社">
+<meta property="og:description" content="五场活动，五份记录：漫展、桌游嘉年华、新老生见面会、赏春寻宝、桌游派对。">
+<meta property="og:image" content="images/og-cover.jpg">
+<link rel="icon" href="images/og-cover.jpg">
+<script>document.documentElement.classList.add('js');</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,352 +18,319 @@
 
 <header class="site-header" id="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html">
-      <span class="brand-dot" aria-hidden="true"></span>
-      花忆动漫社
-    </a>
-
+    <a class="brand" href="index.html"><span class="brand-dot" aria-hidden="true"></span>花忆动漫社</a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单">☰</button>
     <nav class="site-nav" id="site-nav" aria-label="主导航">
-      <ul id="nav-menu">
+      <ul>
         <li><a href="index.html">首页</a></li>
-        <li><a href="activities.html" class="is-active">活动档案</a></li>
-        <li><a href="index.html#about">关于我们</a></li>
-        <li><a href="index.html#gallery">影集</a></li>
-        <li><a href="index.html#contact" class="nav-cta">加入我们</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="activities.html" class="is-active" aria-current="page">活动档案</a></li>
+        <li><a href="gallery.html">影集</a></li>
+        <li><a href="join.html" class="nav-cta">加入我们</a></li>
       </ul>
     </nav>
-
-    <button class="menu-toggle" id="menu-toggle" type="button"
-            aria-controls="site-nav" aria-expanded="false" aria-label="打开菜单">☰</button>
   </div>
 </header>
 
 <main id="main">
 
-  <!-- ================= 页头 ================= -->
   <section class="page-hero">
     <div class="container">
-      <div class="breadcrumb">
-        <a href="index.html">首页</a>
-        <span aria-hidden="true">/</span>
-        <span>活动档案</span>
-      </div>
-      <h1>活动档案</h1>
-      <p>一场活动办完，热闹会散，但记录留下来。这里放着 2025—2026 学年五场活动的成果、暴露的问题，
-         以及下一次要改的地方——比照片更耐看的部分。</p>
-
-      <ul class="toc">
-        <li><a href="#manzhan">校园漫展</a></li>
-        <li><a href="#boyi">桌游嘉年华</a></li>
-        <li><a href="#meet">新老生见面会</a></li>
-        <li><a href="#shangchun">赏春寻宝</a></li>
-        <li><a href="#zhuoyou">桌游派对</a></li>
-        <li><a href="#timeline">时间线</a></li>
-        <li><a href="#next">下一场</a></li>
+      <ul class="breadcrumb">
+        <li><a href="index.html">首页</a></li>
+        <li>活动档案</li>
       </ul>
+      <h1>活动档案</h1>
+      <p class="lead">每场活动留一份记录：时间、地点、规模、现场怎么运转、我们从中带走了什么。左边选一场，右边看细节——不用翻五屏。</p>
     </div>
   </section>
 
-  <!-- ================= 01 漫展 ================= -->
-  <section class="section" id="manzhan">
+  <section class="section">
     <div class="container">
-      <article class="record">
-        <div class="record-side">
-          <span class="record-no">01 / 05</span>
-          <h2>次元跃动·青春集结</h2>
-          <ul class="record-facts">
-            <li><b>时间</b>2025 年 4 月 26 日 8:00—18:00</li>
-            <li><b>地点</b>学校操场</li>
-            <li><b>主办</b>花忆动漫社</li>
-            <li><b>协办</b>心理健康研究教育者协会、电子竞技协会</li>
-            <li><b>对象</b>全校师生</li>
-          </ul>
+      <div class="archive" data-archive>
+
+        <div class="archive-nav" role="tablist" aria-orientation="vertical" aria-label="活动列表">
+          <a class="act-tab is-active" id="tab-manzhan" href="#manzhan" role="tab" aria-controls="manzhan" aria-selected="true" tabindex="0" data-act="manzhan">
+            <span class="no">01</span><span class="t">次元跃动 · 青春集结</span><span class="d">2025.04.26</span>
+          </a>
+          <a class="act-tab" id="tab-boyi" href="#boyi" role="tab" aria-controls="boyi" aria-selected="false" tabindex="-1" data-act="boyi">
+            <span class="no">02</span><span class="t">博弈同游 · 共绘新章</span><span class="d">2025.05.24</span>
+          </a>
+          <a class="act-tab" id="tab-meet" href="#meet" role="tab" aria-controls="meet" aria-selected="false" tabindex="-1" data-act="meet">
+            <span class="no">03</span><span class="t">新老生见面会 · 次元初遇</span><span class="d">2025.12.06</span>
+          </a>
+          <a class="act-tab" id="tab-shangchun" href="#shangchun" role="tab" aria-controls="shangchun" aria-selected="false" tabindex="-1" data-act="shangchun">
+            <span class="no">04</span><span class="t">校园寻春 · 共赏新景</span><span class="d">2026.03.17</span>
+          </a>
+          <a class="act-tab" id="tab-zhuoyou" href="#zhuoyou" role="tab" aria-controls="zhuoyou" aria-selected="false" tabindex="-1" data-act="zhuoyou">
+            <span class="no">05</span><span class="t">桌游派对 · 次元相聚</span><span class="d">2026.04.26</span>
+          </a>
         </div>
 
-        <div class="record-body">
-          <p>这是社团第一次把「漫展」这件事整个搬到操场上办。Coser 展示与摄影创作、社团联动游戏与舞台表演、
-             摊位与周边，一天里轮着上。对很多同学来说，这是他们第一次在校园里看到成规模的二次元现场。</p>
+        <div class="archive-panels">
+          <p id="act-status" class="sr-only" role="status" aria-live="polite"></p>
 
-          <h4>做成了什么</h4>
-          <ul class="ticks">
-            <li>搭建了一个可复用的二次元文化交流平台，跨社团协作第一次跑通。</li>
-            <li>Coser 展示与摄影创作并行，现场产出一批可继续用于宣传的素材。</li>
-            <li>游戏与表演环节由三个社团联合承担，参与者的集体归属感明显提升。</li>
-          </ul>
+          <!-- ================= 01 ================= -->
+          <article class="act-panel is-active" id="manzhan" role="tabpanel" aria-labelledby="tab-manzhan" tabindex="0" data-act="manzhan">
+            <header class="panel-head">
+              <p class="panel-no">01 / 05 · 2025.04.26</p>
+              <h2>次元跃动 · 青春集结</h2>
+              <p class="panel-quote">「这是很多同学第一次在校园里，看到成规模的二次元现场。」</p>
+            </header>
 
-          <h4>暴露的问题</h4>
-          <ul class="ticks todos">
-            <li>人流预估不足：热门区域出现短暂拥堵，疏散不够及时。</li>
-            <li>个别社团游戏环节物资不充分、规则解释不清，影响流畅度。</li>
-            <li>跨部门沟通不畅，场地临时更换，直到最后一天才确认。</li>
-          </ul>
+            <figure class="act-figure">
+              <img src="images/opt/booth-03-1200.webp"
+                   srcset="images/opt/booth-03-480.webp 480w, images/opt/booth-03-768.webp 768w, images/opt/booth-03-1200.webp 1200w"
+                   sizes="(max-width: 900px) 92vw, 610px"
+                   width="1200" height="900" loading="lazy" decoding="async"
+                   alt="摊位前，社员把周边递给排队的同学，身后立着等身立牌">
+              <figcaption>操场展位 · 周边与立牌都是社员自己做的</figcaption>
+            </figure>
 
-          <h4>下次怎么改</h4>
-          <ul class="ticks">
-            <li>提前规划疏散路线与指示标识，设置专人引导。</li>
-            <li>制定高峰人流预案，热门项目做容量上限。</li>
-            <li>活动前统一培训 + 物资清单复核，规则至少演练一遍。</li>
-          </ul>
+            <dl class="fact-list">
+              <div><dt>时间</dt><dd>2025 年 4 月 26 日 8:00—18:00</dd></div>
+              <div><dt>地点</dt><dd>学校操场</dd></div>
+              <div><dt>协作</dt><dd>心理健康研究教育者协会、电子竞技协会</dd></div>
+              <div><dt>对象</dt><dd>全校师生</dd></div>
+            </dl>
+
+            <h3>那天发生了什么</h3>
+            <p>社团第一次把「漫展」这件事整个搬到操场上办。Coser 展示与摄影创作、社团联动游戏与舞台表演、摊位与周边，一天里轮着上；从上午布场到傍晚收摊，操场上一直有人。</p>
+            <p>三个社团各出一块内容，谁也不只是「挂名协办」——游戏环节由电竞社带、心理协会负责互动问答、我们负责整场调度与视觉，第一次把跨社团协作跑通。</p>
+
+            <h3>现场怎么运转</h3>
+            <ul class="ticks keep">
+              <li>搭建了一个可复用的二次元文化交流平台，跨社团协作第一次跑通。</li>
+              <li>Coser 展示与摄影创作并行，现场产出一批可继续用于宣传的素材。</li>
+              <li>游戏与表演由三个社团联合承担，参与者的集体归属感明显提升。</li>
+            </ul>
+
+            <h3>我们学到的 · 下一次</h3>
+            <ul class="ticks next">
+              <li>人气超出预期，热门区域一度排起长队——下次提前划出疏散路线与引导标识，高峰时段加派引导同学。</li>
+              <li>联动环节的规则和物资提前统一演练一遍，跨部门沟通留出至少两轮确认。</li>
+            </ul>
+
+            <p class="panel-more"><a href="gallery.html#g-manzhan">看这场活动的返图 →</a></p>
+          </article>
+
+          <!-- ================= 02 ================= -->
+          <article class="act-panel" id="boyi" role="tabpanel" aria-labelledby="tab-boyi" tabindex="0" data-act="boyi">
+            <header class="panel-head">
+              <p class="panel-no">02 / 05 · 2025.05.24</p>
+              <h2>博弈同游 · 共绘新章</h2>
+              <p class="panel-quote">「十间小教室，一天之内变成了十个不同的世界。」</p>
+            </header>
+
+            <figure class="act-figure">
+              <img src="images/opt/meet-03-1200.webp"
+                   srcset="images/opt/meet-03-480.webp 480w, images/opt/meet-03-768.webp 768w, images/opt/meet-03-1200.webp 1200w"
+                   sizes="(max-width: 900px) 92vw, 610px"
+                   width="1200" height="900" loading="lazy" decoding="async"
+                   alt="教室里围坐的桌游局，桌上摊着卡牌与零食">
+              <figcaption>十间小教室 · 每间一个主题，串起来就是一整层楼的桌游区</figcaption>
+            </figure>
+
+            <dl class="fact-list">
+              <div><dt>时间</dt><dd>2025 年 5 月 24 日 8:00—18:00</dd></div>
+              <div><dt>地点</dt><dd>公共教学南楼一楼 10 间小教室</dd></div>
+              <div><dt>形式</dt><dd>《三国杀》《狼人杀》《宝可梦 PTCG》＋ 剧本杀专场</dd></div>
+              <div><dt>对象</dt><dd>全校在校学生，自由报名 + 现场参与</dd></div>
+            </dl>
+
+            <h3>那天发生了什么</h3>
+            <p>十间小教室被分成不同主题：策略卡牌、身份推理、集换式卡牌，还有单独分区的剧本杀专场——保证沉浸感，也避免和热闹的公共区互相干扰。</p>
+            <p>比起「比赛」，这更像一场把人聚起来的游园会。志愿者与主持人提前培训，规则争议、设备故障当天都在几分钟内处理掉，现场秩序一直很稳。</p>
+
+            <h3>现场怎么运转</h3>
+            <ul class="ticks keep">
+              <li>多元游戏覆盖不同类型爱好者，现场参与人数超出预期。</li>
+              <li>通过策略类游戏普及桌游文化，参与者的逻辑与协作都有收获。</li>
+              <li>志愿者与主持人提前培训，秩序井然，突发情况处理得又快又稳。</li>
+            </ul>
+
+            <h3>我们学到的 · 下一次</h3>
+            <ul class="ticks next">
+              <li>热门教室人气太旺、冷门区偏空——下次做分区引导牌，按现场人数动态调配，并增设休息与咨询点。</li>
+              <li>长时游戏改预约制 + 预留替补名单，另开一个「快速入门区」给想试水的同学。</li>
+            </ul>
+
+            <p class="panel-more"><a href="gallery.html#g-boyi">看这场活动的返图 →</a></p>
+          </article>
+
+          <!-- ================= 03 ================= -->
+          <article class="act-panel" id="meet" role="tabpanel" aria-labelledby="tab-meet" tabindex="0" data-act="meet">
+            <header class="panel-head">
+              <p class="panel-no">03 / 05 · 2025.12.06</p>
+              <h2>新老生见面会 · 次元初遇</h2>
+              <p class="panel-quote">「一场活动下来，新老生之间那道墙薄了不少。」</p>
+            </header>
+
+            <figure class="act-figure">
+              <img src="images/opt/booth-07-1200.webp"
+                   srcset="images/opt/booth-07-480.webp 480w, images/opt/booth-07-768.webp 768w, images/opt/booth-07-1200.webp 1200w"
+                   sizes="(max-width: 900px) 92vw, 610px"
+                   width="1200" height="900" loading="lazy" decoding="async"
+                   alt="公共教学南楼 311 教室的黑板，粉笔画着「新老生见面会」标题与动漫人物">
+              <figcaption>311 教室的黑板报 · 美术部提前两晚画完</figcaption>
+            </figure>
+
+            <dl class="fact-list">
+              <div><dt>时间</dt><dd>2025 年 12 月 6 日 13:40—21:40</dd></div>
+              <div><dt>地点</dt><dd>公共教学南楼 311 大教室</dd></div>
+              <div><dt>形式</dt><dd>谷子接龙 + 你画我猜 + 粉笔墙 + 分区桌游</dd></div>
+              <div><dt>对象</dt><dd>2025 级新社员 + 老社员，凭报名表入场</dd></div>
+            </dl>
+
+            <h3>那天发生了什么</h3>
+            <p>核心是「轻社交、深链接」：谷子接龙和抽奖安利负责破冰，你画我猜负责热场，粉笔墙和桌游区负责让人愿意留下来多坐一会儿。</p>
+            <p>八个小时里，从社恐到能主动换座位，很多人只用了半个下午。收场时黑板上的粉笔画被拍了几十次，成了当晚朋友圈的主角。</p>
+
+            <h3>现场怎么运转</h3>
+            <ul class="ticks keep">
+              <li>破冰效率超预期：人均认识 2.4 名同好，完成「每人至少认识 3 位」目标的 82%。</li>
+              <li>人才挖掘见效：你画我猜环节当场发现绘画骨干 3 人、摄影苗子 2 人。</li>
+              <li>物资循环零损耗：吧唧、UNO 等可回收道具回收率 100%，零遗失、零损坏。</li>
+            </ul>
+
+            <h3>我们学到的 · 下一次</h3>
+            <ul class="ticks next">
+              <li>社团介绍讲得比计划久，粉笔墙也太受欢迎——下次固定「10 分钟视频 + 5 分钟问答」，并申请相邻两间教室分区同步作画。</li>
+              <li>奖品结构单一（只有吧唧），下次丰富奖池层次，让参与感覆盖到更多人。</li>
+            </ul>
+
+            <p class="panel-more"><a href="gallery.html#g-meet">看这场活动的返图 →</a></p>
+          </article>
+
+          <!-- ================= 04 ================= -->
+          <article class="act-panel" id="shangchun" role="tabpanel" aria-labelledby="tab-shangchun" tabindex="0" data-act="shangchun">
+            <header class="panel-head">
+              <p class="panel-no">04 / 05 · 2026.03.17</p>
+              <h2>校园寻春 · 共赏新景</h2>
+              <p class="panel-quote">「把礼物藏进春天里，让大家自己走出来。」</p>
+            </header>
+
+            <figure class="act-figure">
+              <img src="images/opt/booth-02-1200.webp"
+                   srcset="images/opt/booth-02-480.webp 480w, images/opt/booth-02-768.webp 768w, images/opt/booth-02-1200.webp 1200w"
+                   sizes="(max-width: 900px) 92vw, 610px"
+                   width="1200" height="800" loading="lazy" decoding="async"
+                   alt="户外展位前排队的人群，远处是教学楼">
+              <figcaption>校园春景区 · 活动当天的集合点，队伍排到了教学楼台阶下</figcaption>
+            </figure>
+
+            <dl class="fact-list">
+              <div><dt>时间</dt><dd>2026 年 3 月 17 日 14:30—17:30</dd></div>
+              <div><dt>地点</dt><dd>校园春景集中区域（草坪、花坛、教学楼周边）</dd></div>
+              <div><dt>形式</dt><dd>礼品藏点 + 春日打卡 + 返图征集</dd></div>
+              <div><dt>对象</dt><dd>全体在校师生</dd></div>
+            </dl>
+
+            <h3>那天发生了什么</h3>
+            <p>把礼品藏进校园的春景里，让师生自己去找。规则很轻：找到就是你的，顺手拍张照发回来。</p>
+            <p>结果是——大家真的走出教室了。三个小时里，草坪、花坛和教学楼周边都有人在低头找东西，返图也像雪片一样收上来，最后统计有一百多张。</p>
+
+            <h3>现场怎么运转</h3>
+            <ul class="ticks keep">
+              <li>参与热度超预期，覆盖全校各年级，社团校园影响力明显提升。</li>
+              <li>内容产出丰硕：收集春日打卡返图百余张，同时发掘出多名摄影、文案潜力社员。</li>
+              <li>物资管理规范：礼品按计划投放，可回收物料回收率 100%，零浪费零遗失。</li>
+              <li>全程无踩踏、无花草损坏、无物品遗失，应急机制正常运行。</li>
+            </ul>
+
+            <h3>我们学到的 · 下一次</h3>
+            <ul class="ticks next">
+              <li>热门点位人气集中、冷门区偏安静——下次按人流量给校园分区，礼品数量梯度分配，配合分流规则。</li>
+              <li>这次只做了一轮传播，下次加主题打卡点、摄影征集和线上投票，把一次活动变成两轮。</li>
+            </ul>
+
+            <p class="panel-more"><a href="gallery.html#g-shangchun">看这场活动的返图 →</a></p>
+          </article>
+
+          <!-- ================= 05 ================= -->
+          <article class="act-panel" id="zhuoyou" role="tabpanel" aria-labelledby="tab-zhuoyou" tabindex="0" data-act="zhuoyou">
+            <header class="panel-head">
+              <p class="panel-no">05 / 05 · 2026.04.26</p>
+              <h2>桌游派对 · 次元相聚</h2>
+              <p class="panel-quote">「目的不是比赛，是让新老社员在一张桌子上熟起来。」</p>
+            </header>
+
+            <figure class="act-figure">
+              <img src="images/opt/booth-05-1200.webp"
+                   srcset="images/opt/booth-05-480.webp 480w, images/opt/booth-05-768.webp 768w, images/opt/booth-05-1200.webp 1200w"
+                   sizes="(max-width: 900px) 92vw, 610px"
+                   width="1200" height="900" loading="lazy" decoding="async"
+                   alt="阶梯教室里的同学们围坐在一起">
+              <figcaption>阶梯教室 · 四小时，桌游、零食、奖品<!-- TODO(图): 换成桌游派对现场返图 --></figcaption>
+            </figure>
+
+            <dl class="fact-list">
+              <div><dt>时间</dt><dd>2026 年 4 月 26 日 14:00—18:00</dd></div>
+              <div><dt>地点</dt><dd>学校阶梯教室</dd></div>
+              <div><dt>形式</dt><dd>社内轻量场 · 桌游 + 零食 + 抽奖</dd></div>
+              <div><dt>对象</dt><dd>花忆动漫社全体社员</dd></div>
+            </dl>
+
+            <h3>那天发生了什么</h3>
+            <p>面向社内的轻量场：桌游、零食、奖品，四小时。没有比赛的压力，只有一桌一桌的聊天和「再来一局」。</p>
+            <p>场地布置与物资清点提前完成，全程零安全事故；散场时可回收物资全部整理回收，第二天直接进了下一次活动的箱子。</p>
+
+            <h3>现场怎么运转</h3>
+            <ul class="ticks keep">
+              <li>覆盖全体社员，新老社员深度互动，沟通壁垒明显消解。</li>
+              <li>分工明确，场地布置与物资清点提前完成，全程零安全事故。</li>
+              <li>可回收物资全部整理回收，高效利用、无浪费遗失。</li>
+            </ul>
+
+            <h3>我们学到的 · 下一次</h3>
+            <ul class="ticks next">
+              <li>新手现场上手偏慢——下次活动前把规则与教学视频发到群里，现场安排骨干做答疑。</li>
+              <li>热门桌游区人多、冷门区偏闲——下次排一张桌游轮换表，做科学分区，让每款游戏都有人玩。</li>
+            </ul>
+
+            <p class="panel-more"><a href="gallery.html#g-zhuoyou">看这场活动的返图 →</a></p>
+          </article>
         </div>
-      </article>
+      </div>
+
+      <noscript>
+        <p class="note">你的浏览器关闭了 JavaScript，这里会把五场活动按顺序全部展开——内容一样完整，只是少了左侧切换器。</p>
+      </noscript>
     </div>
   </section>
 
-  <!-- ================= 02 桌游嘉年华 ================= -->
-  <section class="section alt" id="boyi">
-    <div class="container">
-      <article class="record">
-        <div class="record-side">
-          <span class="record-no">02 / 05</span>
-          <h2>博弈同游·共绘新章</h2>
-          <ul class="record-facts">
-            <li><b>时间</b>2025 年 5 月 24 日 8:00—18:00</li>
-            <li><b>地点</b>公共教学南楼一楼 10 间小教室</li>
-            <li><b>主办</b>花忆动漫社</li>
-            <li><b>对象</b>全校在校学生（自由报名 + 现场参与）</li>
-          </ul>
-        </div>
-
-        <div class="record-body">
-          <p>十间小教室，一天之内被分成不同主题：《三国杀》《狼人杀》《宝可梦 PTCG》以及剧本杀。
-             赞助商专属教室做品牌曝光，剧本杀专场单独分区保证沉浸感。比起「比赛」，这更像一场把人聚起来的游园会。</p>
-
-          <h4>做成了什么</h4>
-          <ul class="ticks">
-            <li>多元游戏覆盖不同类型爱好者，现场参与人数超出预期。</li>
-            <li>通过策略类游戏普及桌游文化，参与者逻辑与协作都有收获。</li>
-            <li>志愿者与主持人提前培训，现场秩序井然，规则争议与设备故障都能快速处理。</li>
-          </ul>
-
-          <h4>暴露的问题</h4>
-          <ul class="ticks todos">
-            <li>热门游戏教室拥挤，冷门区域利用率低，动线设计不足。</li>
-            <li>剧本杀等长时游戏因玩家临时缺席中断，替补机制缺失。</li>
-            <li>活动后期个别卡牌遗失，回收清点未落实到责任人。</li>
-          </ul>
-
-          <h4>下次怎么改</h4>
-          <ul class="ticks">
-            <li>设置分区引导牌，动态调整热门项目容量，增设休息与咨询点。</li>
-            <li>长时游戏改预约制 + 预留替补名单，另设快速入门区。</li>
-            <li>每间教室指定物资负责人，活动结束即时核查。</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ================= 03 见面会 ================= -->
-  <section class="section" id="meet">
-    <div class="container">
-      <article class="record">
-        <div class="record-side">
-          <span class="record-no">03 / 05</span>
-          <h2>新老生见面会</h2>
-          <ul class="record-facts">
-            <li><b>时间</b>2025 年 12 月 6 日（周六）13:40—21:40</li>
-            <li><b>地点</b>公共教学南楼 311 大教室</li>
-            <li><b>主办</b>花忆动漫社</li>
-            <li><b>对象</b>2025 级新社员 + 老社员（凭报名表入场）</li>
-          </ul>
-        </div>
-
-        <div class="record-body">
-          <p>核心是「轻社交、深链接」：谷子接龙 + 抽奖安利负责破冰，你画我猜负责热场，粉笔墙和桌游区负责让人留下来。
-             一场下来，新老生之间的那道墙薄了不少。</p>
-
-          <h4>做成了什么</h4>
-          <ul class="ticks">
-            <li>破冰效率超预期：人均认识 2.4 名同好，完成「每人至少认识 3 位」目标的 82%。</li>
-            <li>人才挖掘见效：你画我猜环节发现绘画骨干 3 人、摄影苗子 2 人。</li>
-            <li>物资循环零损耗：吧唧、UNO 等可回收道具回收率 100%，零遗失、零损坏。</li>
-          </ul>
-
-          <h4>暴露的问题</h4>
-          <ul class="ticks todos">
-            <li>社团介绍环节实际用时 19 分钟，超出预定 4 分钟。</li>
-            <li>粉笔墙容量不足，高峰出现「排队 5 分钟、作画 30 秒」。</li>
-            <li>奖品结构单一（只有吧唧），参与感被拉低；桌游区噪音对周边教室有轻微干扰。</li>
-          </ul>
-
-          <h4>下次怎么改</h4>
-          <ul class="ticks">
-            <li>介绍环节固定为「10 分钟视频 + 5 分钟问答」。</li>
-            <li>申请相邻两间教室，分区同步作画。</li>
-            <li>丰富奖池层次，桌游区设专人做音量提醒。</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ================= 04 赏春 ================= -->
-  <section class="section alt" id="shangchun">
-    <div class="container">
-      <article class="record">
-        <div class="record-side">
-          <span class="record-no">04 / 05</span>
-          <h2>校园寻春·共赏新景</h2>
-          <ul class="record-facts">
-            <li><b>时间</b>2026 年 3 月 17 日（周二）14:30—17:30</li>
-            <li><b>地点</b>校园春景集中区域（草坪、花坛、教学楼周边）</li>
-            <li><b>主办</b>花忆动漫社</li>
-            <li><b>对象</b>全体在校师生</li>
-          </ul>
-        </div>
-
-        <div class="record-body">
-          <p>把礼品藏进校园的春景里，让师生自己去找。规则很轻：找到就是你的，顺手拍张照发回来。
-             结果是——大家真的走出教室了，返图也真的收上来了一百多张。</p>
-
-          <h4>做成了什么</h4>
-          <ul class="ticks">
-            <li>参与热度超预期，覆盖全校各年级，社团校园影响力明显提升。</li>
-            <li>内容产出丰硕：收集春日打卡返图百余张，同时发掘出多名摄影、文案潜力社员。</li>
-            <li>物资管理规范：礼品按计划投放，可回收物料回收率 100%，零浪费零遗失。</li>
-            <li>全程无踩踏、无花草损坏、无物品遗失，应急机制正常运行。</li>
-          </ul>
-
-          <h4>暴露的问题</h4>
-          <ul class="ticks todos">
-            <li>点位分布不均：热门区域高峰 8 人同时扎堆，冷门区域几乎无人。</li>
-            <li>宣传只靠班级群与校园公告，低年级与校外住宿师生知晓率不足 40%。</li>
-            <li>互动形式单一，缺少打卡、摄影征集、作品展示等二次传播环节。</li>
-          </ul>
-
-          <h4>下次怎么改</h4>
-          <ul class="ticks">
-            <li>按人流量给校园分区，礼品数量梯度分配，配合分流规则。</li>
-            <li>增设主题打卡点、摄影征集与线上投票，把一次活动变成两轮传播。</li>
-            <li>准备备用礼品与分区巡查岗，实时补位。</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ================= 05 桌游派对 ================= -->
-  <section class="section" id="zhuoyou">
-    <div class="container">
-      <article class="record">
-        <div class="record-side">
-          <span class="record-no">05 / 05</span>
-          <h2>桌游派对·次元相聚</h2>
-          <ul class="record-facts">
-            <li><b>时间</b>2026 年 4 月 26 日（周日）14:00—18:00</li>
-            <li><b>地点</b>学校阶梯教室</li>
-            <li><b>主办</b>花忆动漫社</li>
-            <li><b>对象</b>花忆动漫社全体社员</li>
-          </ul>
-        </div>
-
-        <div class="record-body">
-          <p>面向社内的轻量场：桌游、零食、奖品，四小时。目的不是比赛，是让新老社员在一张桌子上熟起来。</p>
-
-          <h4>做成了什么</h4>
-          <ul class="ticks">
-            <li>覆盖全体社员，新老社员深度互动，沟通壁垒明显消解。</li>
-            <li>分工明确，场地布置与物资清点提前完成，全程零安全事故。</li>
-            <li>可回收物资全部整理回收，高效利用、无浪费遗失。</li>
-          </ul>
-
-          <h4>暴露的问题</h4>
-          <ul class="ticks todos">
-            <li>规则未提前普及，新手现场上手慢，影响体验。</li>
-            <li>热门桌游区拥挤、冷门区闲置，空间利用不均。</li>
-            <li>只设挑战赛奖励，参与奖覆盖不足。</li>
-          </ul>
-
-          <h4>下次怎么改</h4>
-          <ul class="ticks">
-            <li>提前在社团群发规则与教学视频，现场安排骨干答疑。</li>
-            <li>做桌游轮换表，科学分区，引导均衡参与。</li>
-            <li>完善应急流程，预备备用物资与人员。</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- ================= 时间线 ================= -->
-  <section class="section alt" id="timeline">
+  <!-- ============ 时间线 ============ -->
+  <section class="section section--alt" id="timeline">
     <div class="container">
       <div class="section-head">
-        <span class="kicker">Timeline</span>
+        <p class="eyebrow">Timeline</p>
         <h2>五场活动，一条线</h2>
         <p>从「第一次办漫展」到「能稳定办四类活动」，这条线就是社团一年多的成长轨迹。</p>
       </div>
 
       <ol class="timeline">
-        <li>
-          <time>2025.04.26</time>
-          <strong>校园漫展 · 次元跃动</strong>
-          <p>第一次把漫展搬进操场，三个社团联动，也第一次意识到人流预估的重要性。</p>
-        </li>
-        <li>
-          <time>2025.05.24</time>
-          <strong>桌游嘉年华 · 博弈同游</strong>
-          <p>十间教室、四种玩法，验证了「分区 + 自由参与」这套组织方式。</p>
-        </li>
-        <li>
-          <time>2025.12.06</time>
-          <strong>新老生见面会</strong>
-          <p>把破冰做成流程：谷子接龙、你画我猜、粉笔墙，人均认识 2.4 名同好。</p>
-        </li>
-        <li>
-          <time>2026.03.17</time>
-          <strong>赏春寻宝 · 校园寻春</strong>
-          <p>从室内走到户外，用一场寻宝把全校师生的春天串了起来。</p>
-        </li>
-        <li>
-          <time>2026.04.26</time>
-          <strong>桌游派对 · 次元相聚</strong>
-          <p>回到社内，四小时的轻社交，把「活动」还原成「一起玩」。</p>
-        </li>
+        <li><time>2025.04.26</time><strong>校园漫展 · 次元跃动</strong><p>第一次把漫展搬进操场，三个社团联动，完成了从零到一的整场调度。</p></li>
+        <li><time>2025.05.24</time><strong>桌游嘉年华 · 博弈同游</strong><p>十间教室同时开桌，第一次证明「多主题并行」可行。</p></li>
+        <li><time>2025.12.06</time><strong>新老生见面会 · 次元初遇</strong><p>把「认识人」当成活动目标来设计，破冰效率被量化了下来。</p></li>
+        <li><time>2026.03.17</time><strong>校园寻春 · 共赏新景</strong><p>第一次把活动从教室搬到整个校园，也第一次收到上百张返图。</p></li>
+        <li><time>2026.04.26</time><strong>桌游派对 · 次元相聚</strong><p>社内轻量场跑通，物资回收率做到 100%。</p></li>
       </ol>
     </div>
   </section>
 
-  <!-- ================= 下一场 ================= -->
+  <!-- ============ 下一场 ============ -->
   <section class="section" id="next">
     <div class="container">
-      <div class="section-head">
-        <span class="kicker">Next</span>
-        <h2>下一场：新老生见面会 · 次元初遇</h2>
-        <p>2026 年 11 月 14 日（周六）14:00—18:00 · 公共教学南楼大教室</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <img src="images/meet-02.jpg" alt="见面会现场">
-          <div class="card-body">
-            <div class="card-meta"><span>14:00</span><span>开场与社团概况</span></div>
-            <h3>先认识社团</h3>
-            <p>主持人介绍社团概况、年度规划与到场骨干，让新社员先知道「这个社团在做什么」。</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="images/meet-01.jpg" alt="破冰游戏">
-          <div class="card-body">
-            <div class="card-meta"><span>14:20</span><span>破冰</span></div>
-            <h3>谷子接龙 + 抽奖安利</h3>
-            <p>两两认识、交换安利，目标是让每个人至少认识 3 位同好。</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="images/booth-02.png" alt="才艺展示">
-          <div class="card-body">
-            <div class="card-meta"><span>15:30</span><span>才艺与部门</span></div>
-            <h3>你画我猜 + 部门宣讲</h3>
-            <p>才艺展示与「动漫你画我猜」挖人，随后各部门宣讲、现场纳新意向登记。</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="back-home">
-        <a class="btn" href="index.html">← 回到首页</a>
+      <div class="next-up">
+        <div>
+          <p class="eyebrow">Next up</p>
+          <h3>新老生见面会 · 次元初遇</h3>
+          <p>2026 年 11 月 14 日 14:00—18:00 · 公教南楼大教室<br>上一届的经验已经整理成流程，这一届会更好玩一点。</p>
+        </div>
+        <p class="btn-row">
+          <a class="btn btn-primary" href="join.html">报名参加</a>
+          <a class="btn btn-ghost" href="gallery.html">先看往期返图</a>
+        </p>
       </div>
     </div>
   </section>
@@ -365,21 +338,37 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      <div class="foot-brand">花忆动漫社</div>
-      <div>山西电子科技学院 · 动漫 × 花艺 × 创意</div>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>花忆动漫社</h4>
+        <p>山西电子科技学院 · 二次元同好社团</p>
+        <p>每场活动都有记录：时间、地点、现场、复盘。</p>
+      </div>
+      <div>
+        <h4>站内</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="gallery.html">影集</a></li>
+          <li><a href="join.html">加入我们</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>直达</h4>
+        <ul>
+          <li><a href="about.html#team">现任负责人与团支书</a></li>
+          <li><a href="#timeline">活动时间线</a></li>
+          <li><a href="join.html#form">报名表</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <a href="index.html">首页</a> ·
-      <a href="index.html#gallery">影集</a> ·
-      <a href="index.html#contact">加入我们</a>
-    </div>
-    <div>© 2026 花忆动漫社 · 页面制作：泠然</div>
+    <p class="footer-bottom"><span>© 2026 花忆动漫社</span><span>网页制作：泠然</span></p>
   </div>
 </footer>
 
-<button class="to-top" id="to-top" type="button" aria-label="回到顶部">↑</button>
-<script src="script.js"></script>
+<button class="to-top" id="to-top" aria-label="回到顶部">↑</button>
+
+<script src="script.js" defer></script>
 </body>
 </html>

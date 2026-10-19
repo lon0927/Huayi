@@ -4,7 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>花忆动漫社 · 山西电子科技学院</title>
-<meta name="description" content="山西电子科技学院花忆动漫社：漫展、桌游、新老生见面会、赏春寻宝……一学期五场活动，把二次元搬进校园。">
+<meta name="description" content="山西电子科技学院花忆动漫社：漫展、桌游、新老生见面会、赏春寻宝……一学期五场活动，把二次元搬进校园。活动档案每场一份记录。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="花忆动漫社 · 山西电子科技学院">
+<meta property="og:description" content="漫展、桌游、见面会、赏春寻宝——五场活动，一群把爱好做成日常的人。">
+<meta property="og:image" content="images/og-cover.jpg">
+<link rel="icon" href="images/og-cover.jpg">
+<script>document.documentElement.classList.add('js');</script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,192 +18,225 @@
 
 <header class="site-header" id="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html">
-      <span class="brand-dot" aria-hidden="true"></span>
-      花忆动漫社
-    </a>
-
+    <a class="brand" href="index.html"><span class="brand-dot" aria-hidden="true"></span>花忆动漫社</a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航菜单">☰</button>
     <nav class="site-nav" id="site-nav" aria-label="主导航">
-      <ul id="nav-menu">
-        <li><a href="index.html" class="is-active">首页</a></li>
+      <ul>
+        <li><a href="index.html" class="is-active" aria-current="page">首页</a></li>
+        <li><a href="about.html">关于我们</a></li>
         <li><a href="activities.html">活动档案</a></li>
-        <li><a href="#about">关于我们</a></li>
-        <li><a href="#gallery">影集</a></li>
-        <li><a href="#contact" class="nav-cta">加入我们</a></li>
+        <li><a href="gallery.html">影集</a></li>
+        <li><a href="join.html" class="nav-cta">加入我们</a></li>
       </ul>
     </nav>
-
-    <button class="menu-toggle" id="menu-toggle" type="button"
-            aria-controls="site-nav" aria-expanded="false" aria-label="打开菜单">☰</button>
   </div>
 </header>
 
 <main id="main">
 
-  <!-- ================= 首屏 ================= -->
+  <!-- ============ 1. 首屏 ============ -->
   <section class="hero">
-    <div class="hero-media">
-      <img src="images/booth-04.png" alt="花忆动漫社在校园摆摊，展台上摆着立牌、周边与抽奖箱">
-    </div>
-    <div class="hero-inner">
-      <span class="hero-kicker">Hua Yi Anime Club</span>
-      <h1>花忆动漫社</h1>
-      <p>山西电子科技学院的二次元据点。我们办漫展、开桌游、拍 Cos、在春天里藏礼物——
-         把喜欢的东西做成一场又一场能一起玩的活动。</p>
-      <div class="hero-actions">
-        <a class="btn" href="activities.html">看看我们的活动档案</a>
-        <a class="btn ghost" href="#contact">加入我们</a>
-      </div>
-    </div>
-    <span class="hero-scroll" aria-hidden="true">SCROLL</span>
-  </section>
-
-  <!-- ================= 数字 ================= -->
-  <section class="section" id="numbers">
-    <div class="container">
-      <div class="stats">
-        <div class="stat"><strong>110+</strong><span>名正式社员</span></div>
-        <div class="stat"><strong>5</strong><span>场已归档活动</span></div>
-        <div class="stat"><strong>4</strong><span>个部门：宣传 / 摄影 / Cos / 美术</span></div>
-        <div class="stat"><strong>100%</strong><span>可回收物资回收率</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= 关于我们 ================= -->
-  <section class="section" id="about">
-    <div class="container about-grid">
-      <figure class="about-figure">
-        <img src="images/booth-01.png" alt="招新摊位前，社员正在给同学介绍周边">
-        <figcaption>校园招新现场 · 摊位与周边</figcaption>
-      </figure>
-
-      <div class="about-text">
-        <h2>关于我们</h2>
-        <p>花忆动漫社是一个以动漫、Cos、摄影与桌游为载体的学生社团。社员来自设计、艺术、摄影、配音等不同方向，
-           分工明确，日常气氛融洽。</p>
-        <p>我们做活动的思路很简单：<strong>先让参与者觉得好玩，再让这件事能留下东西。</strong>
-           所以每场活动都会留返图、留总结、留复盘——一年下来，社团攒下的不只是照片，
-           还有一套能重复用的流程。</p>
-        <ul class="about-list">
-          <li><b>日常</b>：每周线上分享会——新番推荐、摄影技巧、出片踩点。</li>
-          <li><b>大型</b>：每学期一场校园漫展或主题展，联合其他社团一起办。</li>
-          <li><b>轻社交</b>：新老生见面会、桌游派对、春日寻宝，门槛低、参与感强。</li>
-          <li><b>出片</b>：Cos 主题拍摄，从选景、配色到后期，由摄影部带着做。</li>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Hua Yi Anime Club</p>
+        <h1>花忆动漫社</h1>
+        <p class="lead">山西电子科技学院的二次元据点。办漫展、开桌游、拍 Cos、在春天里藏礼物——把喜欢的东西做成一场又一场能一起玩的活动。</p>
+        <p class="btn-row">
+          <a class="btn btn-primary" href="activities.html">看活动档案</a>
+          <a class="btn btn-ghost" href="join.html">加入我们</a>
+        </p>
+        <ul class="hero-facts">
+          <li><b>110+</b>名正式社员</li>
+          <li><b>5</b>场已归档活动</li>
+          <li><b>4</b>个部门</li>
         </ul>
       </div>
+
+      <div class="hero-collage">
+        <figure class="hc1">
+          <img src="images/opt/booth-03-1200.webp"
+               srcset="images/opt/booth-03-768.webp 768w, images/opt/booth-03-1200.webp 1200w, images/opt/booth-03-1600.webp 1600w"
+               sizes="(max-width: 900px) 92vw, 44vw"
+               width="1200" height="900" fetchpriority="high" decoding="async"
+               alt="招新摊位前，社员把周边递给排队的同学，身后立着等身立牌">
+        </figure>
+        <figure class="hc2">
+          <img src="images/opt/booth-07-768.webp"
+               srcset="images/opt/booth-07-480.webp 480w, images/opt/booth-07-768.webp 768w, images/opt/booth-07-1200.webp 1200w"
+               sizes="(max-width: 900px) 45vw, 22vw"
+               width="1200" height="900" decoding="async"
+               alt="教室黑板上的粉笔画，写着活动主题与动漫角色">
+        </figure>
+        <figure class="hc3">
+          <img src="images/opt/meet-03-768.webp"
+               srcset="images/opt/meet-03-480.webp 480w, images/opt/meet-03-768.webp 768w, images/opt/meet-03-1200.webp 1200w"
+               sizes="(max-width: 900px) 45vw, 22vw"
+               width="1200" height="900" decoding="async"
+               alt="教室里的桌游局，桌上摊着卡牌与零食">
+        </figure>
+        <figure class="hc4">
+          <img src="images/opt/event2-1200.webp"
+               srcset="images/opt/event2-768.webp 768w, images/opt/event2-1200.webp 1200w, images/opt/event2-1600.webp 1600w"
+               sizes="(max-width: 900px) 92vw, 44vw"
+               width="1600" height="720" decoding="async"
+               alt="户外展位前，社员举着社团展板合影">
+        </figure>
+      </div>
     </div>
   </section>
 
-  <!-- ================= 活动掠影 ================= -->
-  <section class="section alt" id="events">
+  <!-- ============ 2. 数字条 ============ -->
+  <section class="section section--tight" aria-label="社团数据">
+    <div class="container">
+      <ul class="stats">
+        <li><b>110+</b><span>名正式社员</span></li>
+        <li><b>5</b><span>场已归档活动</span></li>
+        <li><b>4</b><span>个部门</span></li>
+        <li><b>100%</b><span>可回收物资回收率</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 3. 一句话简介 ============ -->
+  <section class="section section--alt" id="about-brief">
+    <div class="container brief">
+      <div>
+        <p class="eyebrow">Who we are</p>
+        <h2>一群把爱好做成日常的人</h2>
+        <p>花忆动漫社是一个以动漫、Cos、摄影与桌游为载体的学生社团。社员来自设计、艺术、摄影、配音等不同方向，分工明确，气氛融洽。</p>
+        <p>我们办活动的思路很简单：先让参与者觉得好玩，再让这件事能留下来。所以每场活动都会留返图、留总结、留复盘——一年下来，社团攒下的不只是照片，还有一套能重复用的流程。</p>
+        <dl>
+          <dt>现任团支书</dt>
+          <dd><span class="name-ph">【团支书姓名】</span></dd>
+          <dt>现任负责人</dt>
+          <dd><span class="name-ph">【负责人姓名】</span></dd>
+        </dl>
+        <p class="link-more"><a href="about.html">→ 关于我们、部门与大事记</a></p>
+      </div>
+      <figure>
+        <img src="images/opt/meet-02-1200.webp"
+             srcset="images/opt/meet-02-768.webp 768w, images/opt/meet-02-1200.webp 1200w"
+             sizes="(max-width: 900px) 92vw, 420px"
+             width="1200" height="900" loading="lazy" decoding="async"
+             alt="大教室黑板上的粉笔画全景">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 4. 精选三场 ============ -->
+  <section class="section" id="picks">
     <div class="container">
       <div class="section-head">
-        <span class="kicker">Events</span>
-        <h2>最近在做什么</h2>
-        <p>挑三场先看看，完整的活动档案在第二页。</p>
+        <p class="eyebrow">Highlights</p>
+        <h2>先看这三场</h2>
+        <p>一场把漫展搬进操场，一场让新老生坐在同一张桌子上，一场把礼物藏进了春天里。</p>
       </div>
 
       <div class="cards">
-        <article class="card">
-          <img src="images/booth-03.png" alt="漫展现场摊位">
+        <a class="card" href="activities.html#manzhan">
+          <figure>
+            <img src="images/opt/booth-03-768.webp"
+                 srcset="images/opt/booth-03-480.webp 480w, images/opt/booth-03-768.webp 768w, images/opt/booth-03-1200.webp 1200w"
+                 sizes="(max-width: 760px) 92vw, 340px"
+                 width="1200" height="900" loading="lazy" decoding="async"
+                 alt="招新摊位前，社员正在给同学介绍周边">
+          </figure>
           <div class="card-body">
-            <div class="card-meta"><span>2025.04.26</span><span>操场</span></div>
-            <h3>次元跃动·青春集结</h3>
-            <p>联合心理健康研究教育者协会与电子竞技协会办的校园漫展：Coser 展示、摄影创作、
-               社团联动游戏，一整天把操场变成了展场。</p>
-            <a class="card-link" href="activities.html#manzhan">看这场活动的记录 →</a>
+            <p class="card-meta"><span>2025.04.26</span><span>学校操场</span></p>
+            <h3>次元跃动 · 青春集结</h3>
+            <p>社团第一次把漫展整个搬到操场：Coser 展示、摄影创作、三个社团联动游戏，一天轮着上。</p>
           </div>
-        </article>
+        </a>
 
-        <article class="card">
-          <img src="images/meet-01.jpg" alt="新老生见面会现场">
+        <a class="card" href="activities.html#meet">
+          <figure>
+            <img src="images/opt/booth-07-768.webp"
+                 srcset="images/opt/booth-07-480.webp 480w, images/opt/booth-07-768.webp 768w, images/opt/booth-07-1200.webp 1200w"
+                 sizes="(max-width: 760px) 92vw, 340px"
+                 width="1200" height="900" loading="lazy" decoding="async"
+                 alt="黑板上画着新老生见面会的粉笔标题与动漫人物">
+          </figure>
           <div class="card-body">
-            <div class="card-meta"><span>2025.12.06</span><span>公共教学南楼 311</span></div>
-            <h3>新老生见面会</h3>
-            <p>谷子接龙、你画我猜、粉笔墙、桌游区。人均认识 2.4 名同好，
-               顺带挖出 3 个绘画骨干和 2 个摄影苗子。</p>
-            <a class="card-link" href="activities.html#meet">看这场活动的记录 →</a>
+            <p class="card-meta"><span>2025.12.06</span><span>公共教学南楼 311</span></p>
+            <h3>新老生见面会 · 次元初遇</h3>
+            <p>谷子接龙破冰、你画我猜热场、粉笔墙和桌游区留人。人均认识了 2.4 位同好。</p>
           </div>
-        </article>
+        </a>
 
-        <article class="card">
-          <img src="images/booth-07.jpg" alt="春日校园寻宝活动">
+        <a class="card" href="activities.html#shangchun">
+          <figure>
+            <img src="images/opt/booth-02-768.webp"
+                 srcset="images/opt/booth-02-480.webp 480w, images/opt/booth-02-768.webp 768w, images/opt/booth-02-1200.webp 1200w"
+                 sizes="(max-width: 760px) 92vw, 340px"
+                 width="1200" height="900" loading="lazy" decoding="async"
+                 alt="活动展位外排起的长队，远处是教学楼">
+          </figure>
           <div class="card-body">
-            <div class="card-meta"><span>2026.03.17</span><span>校园春景区域</span></div>
-            <h3>校园寻春·共赏新景</h3>
-            <p>把礼品藏进草坪、花坛和教学楼周边，让师生走出教室去找。
-               一天收上来百余张春日打卡返图。</p>
-            <a class="card-link" href="activities.html#shangchun">看这场活动的记录 →</a>
+            <p class="card-meta"><span>2026.03.17</span><span>校园春景区</span></p>
+            <h3>校园寻春 · 共赏新景</h3>
+            <p>把礼品藏进草坪、花坛和教学楼周边，让师生自己去找。收到春日打卡返图一百多张。</p>
           </div>
-        </article>
-      </div>
-
-      <div class="center-more">
-        <a class="btn" href="activities.html">进入活动档案（5 场）</a>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ================= 影集 ================= -->
-  <section class="section" id="gallery">
+  <!-- ============ 5. 图片墙 ============ -->
+  <section class="section section--alt" id="wall">
     <div class="container">
       <div class="section-head">
-        <span class="kicker">Gallery</span>
-        <h2>影集</h2>
-        <p>摊位、立牌、桌游、教室里的黑板报，都是社团的日常切面。</p>
+        <p class="eyebrow">Gallery</p>
+        <h2>社团日常的九个切面</h2>
+        <p>摊位、黑板、教室、操场——都是我们自己拍的。</p>
       </div>
 
-      <div class="gallery">
-        <figure><img src="images/booth-02.png" alt="摊位前的同学"><figcaption>招新 · 摊位前</figcaption></figure>
-        <figure><img src="images/booth-05.png" alt="展台上的周边"><figcaption>周边与抽奖箱</figcaption></figure>
-        <figure><img src="images/booth-06.png" alt="活动现场"><figcaption>活动现场</figcaption></figure>
-        <figure><img src="images/booth-08.jpg" alt="合照"><figcaption>收摊前的大合照</figcaption></figure>
-        <figure><img src="images/meet-02.jpg" alt="教室里的见面会"><figcaption>新老生见面会 · 教室</figcaption></figure>
-        <figure><img src="images/meet-03.jpg" alt="黑板报"><figcaption>「新老生见面会」黑板报</figcaption></figure>
-        <figure><img src="images/event1.jpg" alt="社团合影"><figcaption>社团合影</figcaption></figure>
-        <figure><img src="images/event4.jpg" alt="活动照片"><figcaption>活动留影</figcaption></figure>
+      <div class="wall">
+        <a href="images/booth-01.png" data-lightbox data-caption="招新桌前的同学，桌上堆着周边盒" data-alt="招新桌前的同学，桌上堆着周边盒" class="w2">
+          <img src="images/opt/booth-01-768.webp" srcset="images/opt/booth-01-480.webp 480w, images/opt/booth-01-768.webp 768w, images/opt/booth-01-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 900px) 30vw, 380px" width="1200" height="800" loading="lazy" decoding="async" alt="招新桌前的同学，桌上堆着周边盒">
+        </a>
+        <a href="images/event3.jpg" data-lightbox data-caption="两位 Coser 在校道上完成拍摄" data-alt="两位 Coser 在校道上完成拍摄" class="h2">
+          <img src="images/opt/event3-768.webp" srcset="images/opt/event3-480.webp 480w, images/opt/event3-768.webp 768w" sizes="(max-width: 560px) 46vw, (max-width: 900px) 30vw, 178px" width="768" height="1156" loading="lazy" decoding="async" alt="两位 Coser 在校道上完成拍摄">
+        </a>
+        <a href="images/booth-02.png" data-lightbox data-caption="活动展位外排起的长队" data-alt="活动展位外排起的长队">
+          <img src="images/opt/booth-02-768.webp" srcset="images/opt/booth-02-480.webp 480w, images/opt/booth-02-768.webp 768w" sizes="(max-width: 560px) 46vw, (max-width: 900px) 30vw, 178px" width="1200" height="800" loading="lazy" decoding="async" alt="活动展位外排起的长队">
+        </a>
+        <a href="images/booth-04.png" data-lightbox data-caption="摊位上的一排周边与桌上立牌" data-alt="摊位上的一排周边与桌上立牌" class="w2">
+          <img src="images/opt/booth-04-768.webp" srcset="images/opt/booth-04-480.webp 480w, images/opt/booth-04-768.webp 768w, images/opt/booth-04-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 900px) 30vw, 380px" width="1200" height="675" loading="lazy" decoding="async" alt="摊位上的一排周边与桌上立牌">
+        </a>
+        <a href="images/meet-01.jpg" data-lightbox data-caption="大教室里坐满了参加活动的同学" data-alt="大教室里坐满了参加活动的同学">
+          <img src="images/opt/meet-01-768.webp" srcset="images/opt/meet-01-480.webp 480w, images/opt/meet-01-768.webp 768w" sizes="(max-width: 560px) 46vw, (max-width: 900px) 30vw, 178px" width="1200" height="900" loading="lazy" decoding="async" alt="大教室里坐满了参加活动的同学">
+        </a>
+        <a href="images/booth-05.png" data-lightbox data-caption="阶梯教室里的同学们" data-alt="阶梯教室里的同学们">
+          <img src="images/opt/booth-05-768.webp" srcset="images/opt/booth-05-480.webp 480w, images/opt/booth-05-768.webp 768w" sizes="(max-width: 560px) 46vw, (max-width: 900px) 30vw, 178px" width="1200" height="900" loading="lazy" decoding="async" alt="阶梯教室里的同学们">
+        </a>
+        <a href="images/event1.jpg" data-lightbox data-caption="白天活动展位前的集体合影" data-alt="白天活动展位前的集体合影" class="w2">
+          <img src="images/opt/event1-768.webp" srcset="images/opt/event1-480.webp 480w, images/opt/event1-768.webp 768w, images/opt/event1-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 900px) 30vw, 380px" width="1200" height="675" loading="lazy" decoding="async" alt="白天活动展位前的集体合影">
+        </a>
+        <a href="images/booth-08.jpg" data-lightbox data-caption="收摊后的操场合影" data-alt="收摊后的操场合影">
+          <img src="images/opt/booth-08-768.webp" srcset="images/opt/booth-08-480.webp 480w, images/opt/booth-08-768.webp 768w, images/opt/booth-08-1200.webp 1200w" sizes="(max-width: 560px) 46vw, (max-width: 900px) 30vw, 178px" width="1200" height="800" loading="lazy" decoding="async" alt="收摊后的操场合影">
+        </a>
+        <a href="images/meet-02.jpg" data-lightbox data-caption="大教室的黑板报" data-alt="大教室的黑板报">
+          <img src="images/opt/meet-02-768.webp" srcset="images/opt/meet-02-480.webp 480w, images/opt/meet-02-768.webp 768w" sizes="(max-width: 560px) 46vw, (max-width: 900px) 30vw, 178px" width="1200" height="900" loading="lazy" decoding="async" alt="大教室的黑板报">
+        </a>
       </div>
+
+      <p class="link-more"><a href="gallery.html">看全部影集 →</a></p>
     </div>
   </section>
 
-  <!-- ================= 联系 ================= -->
-  <section class="section alt" id="contact">
+  <!-- ============ 6. 加入 CTA ============ -->
+  <section class="section" id="join-cta">
     <div class="container">
-      <div class="section-head">
-        <span class="kicker">Join us</span>
-        <h2>加入我们</h2>
-        <p>想入社、想合作、想来看活动，都欢迎留言。</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>社团信息</h3>
-          <ul class="contact-list">
-            <li><b>所属院校</b>山西电子科技学院</li>
-            <li><b>日常活动地</b>公共教学南楼（大教室 / 小教室）</li>
-            <li><b>大型活动地</b>操场 · 阶梯教室</li>
-            <li><b>部门</b>宣传部、摄影部、Cos 部、美术部</li>
-            <li><b>加入方式</b>社团群报名 + 现场报名，均可</li>
-          </ul>
+      <div class="next-up">
+        <div>
+          <p class="eyebrow">Join us</p>
+          <h3>下一次，希望你也在场</h3>
+          <p>不管你是会画、会拍、会剪，还是只想找一群能一起看番的人，这里都有位置。</p>
         </div>
-
-        <form class="contact-form" id="contact-form" novalidate>
-          <div class="field">
-            <label for="name">你的称呼</label>
-            <input id="name" name="name" type="text" placeholder="怎么称呼你" autocomplete="name">
-          </div>
-          <div class="field">
-            <label for="email">联系方式</label>
-            <input id="email" name="email" type="text" placeholder="邮箱或微信号" autocomplete="email">
-          </div>
-          <div class="field">
-            <label for="message">想说的话</label>
-            <textarea id="message" name="message" placeholder="比如：我想加入，平时比较会拍照片"></textarea>
-          </div>
-          <button class="btn" type="submit">提交</button>
-          <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
-        </form>
+        <p class="btn-row">
+          <a class="btn btn-primary" href="join.html">我要加入</a>
+          <a class="btn btn-ghost" href="activities.html">先看活动档案</a>
+        </p>
       </div>
     </div>
   </section>
@@ -205,21 +244,45 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <div>
-      <div class="foot-brand">花忆动漫社</div>
-      <div>山西电子科技学院 · 动漫 × 花艺 × 创意</div>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>花忆动漫社</h4>
+        <p>山西电子科技学院 · 二次元同好社团</p>
+        <p>漫展、桌游、Cos、见面会，一学期五场活动。</p>
+      </div>
+      <div>
+        <h4>站内</h4>
+        <ul>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="activities.html">活动档案</a></li>
+          <li><a href="gallery.html">影集</a></li>
+          <li><a href="join.html">加入我们</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>直达</h4>
+        <ul>
+          <li><a href="about.html#team">现任负责人与团支书</a></li>
+          <li><a href="activities.html#next">下一场活动</a></li>
+          <li><a href="join.html#form">报名表</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <a href="activities.html">活动档案</a> ·
-      <a href="#about">关于我们</a> ·
-      <a href="#contact">加入我们</a>
-    </div>
-    <div>© 2026 花忆动漫社 · 页面制作：泠然</div>
+    <p class="footer-bottom"><span>© 2026 花忆动漫社</span><span>网页制作：泠然</span></p>
   </div>
 </footer>
 
-<button class="to-top" id="to-top" type="button" aria-label="回到顶部">↑</button>
-<script src="script.js"></script>
+<button class="to-top" id="to-top" aria-label="回到顶部">↑</button>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" type="button" aria-label="关闭大图">✕</button>
+  <div>
+    <img src="" alt="">
+    <p class="lb-cap"></p>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
 </body>
 </html>
