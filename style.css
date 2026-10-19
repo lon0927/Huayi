@@ -757,10 +757,10 @@ a:hover { text-decoration: underline; }
 }
 
 @media (max-width: 560px) {
-  .hero-collage { aspect-ratio: auto; grid-template-columns: 1fr 1fr; grid-template-rows: none; }
-  .hero-collage figure { aspect-ratio: 4 / 3; }
-  .hc1 { grid-area: auto; grid-column: span 2; aspect-ratio: 16 / 10; }
-  .hc4 { grid-area: auto; grid-column: span 2; aspect-ratio: 21 / 9; }
+  .hero-collage { aspect-ratio: auto; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 8px; }
+  .hero-collage figure { aspect-ratio: 1 / 1; }
+  .hc1, .hc2, .hc3, .hc4 { grid-area: auto; grid-column: auto; grid-row: auto; aspect-ratio: 1 / 1; }
+  .hc1 img, .hc4 img { object-position: 50% 50%; }
   .wall { grid-auto-rows: 132px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .wall .w2, .wall .h2 { grid-column: span 1; grid-row: span 1; }
   .footer-grid { grid-template-columns: 1fr; }
@@ -903,3 +903,13 @@ body { overscroll-behavior-y: contain; }
 /* .stats 作为容器时保留居中与左右留白 */
 .container.stats { margin: 0 auto; padding: 0 24px; }
 @media (max-width: 760px) { .container.stats { padding: 0 18px; } }
+
+/* ---------- 活动档案：无配图场次的说明行 ---------- */
+.panel-note {
+  margin: 14px 0 0;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--ink-3);
+  background: var(--pink-50);
+  border-radius: var(--radius-sm);
+}
